@@ -7,9 +7,10 @@ namespace SimpleNumber
         static void Main(string[] args)
         {
             Console.WriteLine("Пожалуйста введите число: ");
-            int userNum = int.Parse(Console.ReadLine()), i = 2;
+            int userNum = int.Parse(Console.ReadLine()), 
+                i = 2;
             bool flag = false;
-            while (i < userNum - 1)
+            while (i <= Math.Sqrt(userNum))
             {
                 if (userNum % i == 0)
                 {
